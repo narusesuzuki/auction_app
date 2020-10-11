@@ -13,9 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-//Route::get('/', 'ItemsController@index);
 Route::get('/','ItemController@index');
 Route::resource('items', 'ItemController');
